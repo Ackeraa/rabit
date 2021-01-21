@@ -1,0 +1,9 @@
+README.md
+setup.py
+turtle2gif/__init__.py
+turtle2gif/turtle2gif.py
+turtle2gif.egg-info/PKG-INFO
+turtle2gif.egg-info/SOURCES.txt
+turtle2gif.egg-info/dependency_links.txt
+turtle2gif.egg-info/requires.txt
+turtle2gif.egg-info/top_level.txt

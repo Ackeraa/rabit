@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: turtle2gif
+Version: 1.0
+Summary: Convert turtle drawing process to gif.
+Home-page: http://github.com/ackeraa/turtle2gif
+Author: Acker
+Author-email: acker2880@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: any
+Requires-Python: >=3.6
