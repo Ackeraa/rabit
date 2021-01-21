@@ -23,7 +23,7 @@ pip3 install turtle2gif
 The conversion can split into two steps:
 
 * Capturing pictures at a certain rate while drawing.
-* convert all pictures(.eps) into a gif by ```imageio```.
+* convert all pictures(.eps) into a gif at a certain FPS by ```imageio```.
 
 ```python
 from turtle2gif import turtle2gif
