@@ -44,4 +44,4 @@ There is an example of drawing heart in the example directory.
 
 The converted gif is:
 
-<img src="/Users/gsx/MyProgram/Python/turtle2gif/example/heart.gif" alt="heart" style="zoom:66%;" />
+<img src="https://github.com/Ackeraa/turtle2gif/blob/master/example/heart.gif" alt="heart" style="zoom:66%;" />
