@@ -6,8 +6,8 @@ import glob
 import shutil
 import re
 
-class Turtle2Gif(object):
-    def __init__(self, func, fps_for_eps=10, fps_for_gif=10):
+class Gif(object):
+    def __init__(self, func, fps_for_eps, fps_for_gif):
         self.__func = func
         self.__running = True
         self.__fps_for_eps = fps_for_eps
@@ -44,7 +44,7 @@ class Turtle2Gif(object):
 
     def __convert(self):
         turtle.bye()
-        print('Finished drawing and capturing, you are free to close the window.')
+        print('Finished drawing and capturing.')
         print('Begin to convert the captured eps files to gif...')
         # read .eps files and change them to gif.
         images = []
@@ -61,3 +61,7 @@ class Turtle2Gif(object):
         self.__save()
         turtle.ontimer(self.__draw, 500)
         turtle.done()
+
+def convert2gif(func, fps_for_eps=10, fps_for_gif=10):
+    gif = Gif(func, fps_for_eps, fps_for_gif)
+    gif.run()

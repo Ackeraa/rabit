@@ -6,7 +6,7 @@ import glob
 import shutil
 import re
 
-class Turtle2Gif(object):
+class Gif(object):
     def __init__(self, func, fps_for_eps, fps_for_gif):
         self.__func = func
         self.__running = True
@@ -62,6 +62,6 @@ class Turtle2Gif(object):
         turtle.ontimer(self.__draw, 500)
         turtle.done()
 
-def convert(func, fps_for_eps=10, fps_for_gif=10):
-    gif = Turtle2Gif(func, fps_for_eps, fps_for_gif)
+def convert2gif(func, fps_for_eps=10, fps_for_gif=10):
+    gif = Gif(func, fps_for_eps, fps_for_gif)
     gif.run()

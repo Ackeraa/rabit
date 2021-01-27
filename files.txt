@@ -1,0 +1,7 @@
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/turtle2gif-1.1-py3.7.egg
+/Library/Frameworks/Python.framework/Versions/3.7/bin/imageio_download_bin
+/Library/Frameworks/Python.framework/Versions/3.7/bin/imageio_remove_bin
+/Library/Frameworks/Python.framework/Versions/3.7/bin/PythonTurtle
+/Library/Frameworks/Python.framework/Versions/3.7/bin/f2py
+/Library/Frameworks/Python.framework/Versions/3.7/bin/f2py3
+/Library/Frameworks/Python.framework/Versions/3.7/bin/f2py3.7
