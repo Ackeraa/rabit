@@ -20,7 +20,7 @@ pip3 install rabit
 
 ## Usage
 
-Rabit splits the drawing board into $$grids\times grids$$. To create a Rabit object, you should choose the $$grids$$ (in a row/column) you want to split and the size(default is 600) of drawing board.
+Rabit splits the drawing board into grids x grids. To create a Rabit object, you should choose the grids (in a row/column) you want to split and the size(default is 600) of drawing board.
 
 ```python
 import rabit
@@ -94,4 +94,4 @@ There is an example in the example directory.
 
 The converted gif is:
 
-<img src="https://github.com/Ackeraa/turtle2gif/blob/master/example/heart.gif" alt="heart" style="zoom:66%;" />
+<img src="https://github.com/Ackeraa/rabit/blob/master/example/example.gif" alt="example" style="zoom:66%;" />
