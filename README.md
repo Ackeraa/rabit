@@ -1,4 +1,4 @@
-# Rabit
+Rabit
 
 This project implement a simple API of turtle to draw line, rectangle, circle, text and convert the process into gif.
 
@@ -20,9 +20,7 @@ pip3 install rabit
 
 ## Usage
 
-
-
-## To create a Rabit object.
+Rabit splits the drawing board into $$grids\times grids$$. To create a Rabit object, you should choose the $$grids$$ (in a row/column) you want to split and the size(default is 600) of drawing board.
 
 ```python
 import rabit
@@ -32,9 +30,40 @@ import rabit
 rabit = rabit.Rabit(11, 600)
 ```
 
+Yuu can draw rectangle with ``draw_rect(row, col, rows=1, cols=1, color="black")``.
 
+* ``row``: row of the left up corner of the rectangle
+* ``col``: column of the left up corner of the rectangle
+* ``rows``: length of the rectangle
+* ``cols``: width of the rectangle
+* ``color``: line color
 
-The conversion can split into two steps:
+Yuu can paint rectangle with ``paint_rect(row, col, rows=1, cols=1, color="black", cover=Flase)``.
+
+* ``row``: row of the left up corner of the rectangle
+* ``col``: column of the left up corner of the rectangle
+* ``rows``: length of the rectangle
+* ``cols``: width of the rectangle
+* ``color``: line color
+* ``cover``: if cover the text on it 
+
+Yuu can draw text with ``draw_text(row, col, text, color="black", font=("Times", 24))``.
+
+* ``row``: row of the text
+* ``col``: column of text
+* ``text``: text
+* ``color``: text color
+* ``font``: text font
+
+Yuu can draw line with ``draw_line(from_row, from_col, to_row, to_col, color="black") ``.
+
+* ``from_row``: row of start point
+* ``from_col``: column of start point
+* ``to_row``: row of end point
+* ``to_col``: column of end point
+* ``color``: line color
+
+You can convert the drawing process into gif with ``convert2gif(func, fps_for_eps, fps_for_gif)``.The conversion can split into two steps:
 
 * Capturing pictures at a certain rate while drawing.
 * convert all pictures(.eps) into a gif at a certain FPS by ```imageio```.
@@ -51,9 +80,17 @@ def your_draw_function():
 rabit.convert2gif(your_draw_function, 10, 5)
 ```
 
+There are other functions you can use:
+
+* ``speed(speed)``: set the drawing speed
+* ``pensize(pensize)``: set the pensize
+* ``begin_hide()``: hide the following drawing animation
+* ``end_hide()``: end of the hiding
+* ``hold()``: don't close the window after the drawing
+
 ## Examples
 
-There is an example of drawing board in the example directory.
+There is an example in the example directory.
 
 The converted gif is:
 
