@@ -1,5 +1,4 @@
 import turtle
-from gif import convert2gif
 
 class Rabit(object):
     def __init__(self, grids, size=600):
@@ -18,6 +17,12 @@ class Rabit(object):
     def speed(self, speed):
         self.__speed = speed
         self.t.speed(speed)
+
+    def hold(self):
+        turtle.done()
+
+    def pensize(self, pensize):
+       self.t.pensize(pensize) 
 
     def delay(self, time):
         self.begin_hide()
@@ -71,7 +76,6 @@ class Rabit(object):
         else:
             for i in range(row, row + rows):
                 for j in range(col, col + cols):
-                    print(i, j, self.__mat[i][j])
                     self.draw_text(row, col,
                                    self.__mat[i][j]["text"], self.__mat[i][j]["text_color"],
                                    self.__mat[i][j]["font"])

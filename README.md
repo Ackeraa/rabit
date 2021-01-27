@@ -1,12 +1,6 @@
-Rabit
+# Rabit
 
-This project implement a simple API of turtle to draw line, rectangle, circle, text and convert the process into gif.
-
-
-
-## Python Versions
-
-python 3.
+This project implements a simple API of turtle to draw line, rectangle, circle, text and convert the process into gif.
 
 ## Install
 

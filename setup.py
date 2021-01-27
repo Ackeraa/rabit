@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(name='rabit',
       version='0.1',
-      description='Drawing arrays with turtle.',
+      description='This project implements a simple API of turtle to draw line, rectangle, circle, text and convert the process into gif.',
       long_description=long_description,
       long_description_content_type='text/markdown',
       url='http://github.com/ackeraa/rabit',
