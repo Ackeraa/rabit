@@ -112,6 +112,9 @@ class Rabit(object):
         self.t.goto(self.__left + to_col * self.__grid_size,
                     self.__top - to_row * self.__grid_size)
 
+    def save2eps(self, file):
+        turtle.getcanvas().postscript(file = file)
+
 if __name__ == '__main__':
 
     rabit = Rabit(11)

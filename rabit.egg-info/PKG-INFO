@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: rabit
-Version: 0.1
+Version: 0.2
 Summary: This project implements a simple API of turtle to draw line, rectangle, circle, text and convert the process into gif.
 Home-page: http://github.com/ackeraa/rabit
 Author: Acker
