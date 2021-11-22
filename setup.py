@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(name='rabit',
-      version='0.2',
+      version='0.3',
       description='This project implements a simple API of turtle to draw line, rectangle, circle, text and convert the process into gif.',
       long_description=long_description,
       long_description_content_type='text/markdown',

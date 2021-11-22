@@ -24,7 +24,7 @@ import rabit
 rabit = rabit.Rabit(11, 600)
 ```
 
-Yuu can draw rectangle with ``draw_rect(row, col, rows=1, cols=1, color="black")``.
+You can draw rectangle with ``draw_rect(row, col, rows=1, cols=1, color="black")``.
 
 * ``row``: row of the left up corner of the rectangle
 * ``col``: column of the left up corner of the rectangle
@@ -32,7 +32,7 @@ Yuu can draw rectangle with ``draw_rect(row, col, rows=1, cols=1, color="black")
 * ``cols``: width of the rectangle
 * ``color``: line color
 
-Yuu can paint rectangle with ``paint_rect(row, col, rows=1, cols=1, color="black", cover=Flase)``.
+You can paint rectangle with ``paint_rect(row, col, rows=1, cols=1, color="black", cover=Flase)``.
 
 * ``row``: row of the left up corner of the rectangle
 * ``col``: column of the left up corner of the rectangle
@@ -41,7 +41,15 @@ Yuu can paint rectangle with ``paint_rect(row, col, rows=1, cols=1, color="black
 * ``color``: line color
 * ``cover``: if cover the text on it 
 
-Yuu can draw text with ``draw_text(row, col, text, color="black", font=("Times", 24))``.
+You can clear rectangle with ``clear_rect(row, col, rows=1, cols=1, color="white")``.
+
+* ``row``: row of the left up corner of the rectangle
+* ``col``: column of the left up corner of the rectangle
+* ``rows``: length of the rectangle
+* ``cols``: width of the rectangle
+* ``color``: line color
+
+You can draw text with ``draw_text(row, col, text, color="black", font=("Times", 24))``.
 
 * ``row``: row of the text
 * ``col``: column of text
@@ -49,7 +57,7 @@ Yuu can draw text with ``draw_text(row, col, text, color="black", font=("Times",
 * ``color``: text color
 * ``font``: text font
 
-Yuu can draw line with ``draw_line(from_row, from_col, to_row, to_col, color="black") ``.
+You can draw line with ``draw_line(from_row, from_col, to_row, to_col, color="black") ``.
 
 * ``from_row``: row of start point
 * ``from_col``: column of start point
@@ -77,6 +85,7 @@ rabit.convert2gif(your_draw_function, 10, 5)
 There are other functions you can use:
 
 * ``speed(speed)``: set the drawing speed
+* ``delay(time)``: set the delay time(ms)
 * ``pensize(pensize)``: set the pensize
 * ``begin_hide()``: hide the following drawing animation
 * ``end_hide()``: end of the hiding

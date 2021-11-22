@@ -80,6 +80,21 @@ class Rabit(object):
                                    self.__mat[i][j]["text"], self.__mat[i][j]["text_color"],
                                    self.__mat[i][j]["font"])
 
+    def clear_rect(self, row, col, rows=1, cols=1, color="white"):
+        self.t.pencolor(color)
+        self.t.fillcolor(color)
+        self.t.pu()
+        self.t.setheading(0)
+        self.t.goto(self.__left + col * self.__grid_size, self.__top - row * self.__grid_size) 
+        self.t.pd()
+        self.t.begin_fill()
+        for i in range(2):
+            self.t.fd(self.__grid_size * cols)
+            self.t.rt(90)
+            self.t.fd(self.__grid_size * rows)
+            self.t.rt(90)
+        self.t.end_fill()
+
     def draw_circle(self, row, col, color="black"):
         self.t.pencolor(color)
         self.t.pu()
